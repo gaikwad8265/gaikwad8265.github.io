@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pavan Gaikwad — Content Creator · Graphic Designer · Video Editor</title>
+  <meta name="description" content="Portfolio of Pavan Gaikwad: Content creator, graphic designer, and video editor with hands-on experience in college events, festivals, brand internships, and viral reels." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Interactive Dynamic Background Canvas -->
+  <canvas class="bg-canvas" id="bgCanvas"></canvas>
+
+  <!-- Preloader -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <span class="loader__label">Pavan Gaikwad — Portfolio <span id="loaderYear">2026</span></span>
+      <span class="loader__count" id="loaderCount">0</span>
+    </div>
+    <div class="loader__bar"><span id="loaderBar"></span></div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"><span id="cursorText"></span></div>
+
+  <!-- ==================== TOP NAVIGATION / HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="header__left">
+      <div class="header__role-badge">
+        <span class="role-primary">CONTENT CREATOR</span>
+        <span class="role-secondary">GRAPHIC DESIGNER &amp; VIDEO EDITOR</span>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <a href="#hero">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education &amp; Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header__actions">
+      <!-- Live availability badge -->
+      <div class="status-pill" title="Available for Freelance & Internships">
+        <i class="dot-live"></i>
+        <span>AVAILABLE FOR FREELANCE <span class="sparkle">✦</span></span>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Toggle Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+      
+      <!-- Giant Background "PORTFOLIO" Typography -->
+      <div class="hero__giant-text" aria-hidden="true">PORTFOLIO</div>
+
+      <!-- Centerpiece Creator Cutout Portrait in Front of Portfolio Text -->
+      <div class="hero__creator-wrap">
+        <img 
+          src="hero-pavan.png" 
+          alt="Pavan Gaikwad — Graphic Designer & Content Creator" 
+          class="hero__creator-img"
+        />
+      </div>
+
+      <!-- Hero Overlays Grid: Left Info & Right Stats -->
+      <div class="hero__content-grid">
+        
+        <!-- Left Info Block -->
+        <div class="hero__left-block reveal in">
+          <span class="hero__cursive">Hello, I'm</span>
+          <h1 class="hero__name">
+            <span class="name-wrap"><span class="name-line">PAVAN</span></span>
+            <span class="name-wrap"><span class="name-line">GAIKWAD</span></span>
+          </h1>
+
+          <p class="hero__role-tag">CONTENT CREATOR &amp; GRAPHIC DESIGNER</p>
+
+          <p class="hero__bio-text">
+            I design and build bold, high-retention graphic designs, viral reels, and festival branding. Passionate about clean typography, high-impact posters, and visual details that command attention.
+          </p>
+
+          <div class="hero__avail-badge">
+            <span class="avail-icon">🌐</span>
+            <span>AVAILABLE WORLDWIDE</span>
+          </div>
+        </div>
+
+        <!-- Right Info Block (Tagline & 2 Stats as requested) -->
+        <div class="hero__right-block reveal in">
+          <div class="hero__tagline-box">
+            <span class="sparkle-star">✦</span>
+            <p>Turning ideas into powerful visual experiences.</p>
+          </div>
+
+          <div class="hero__stats-col">
+            <div class="stat-box">
+              <strong class="stat-number" data-count="2">2</strong>
+              <span class="stat-label">YEARS<br />EXPERIENCE</span>
+            </div>
+            <div class="stat-box">
+              <strong class="stat-number" data-count="40">40+</strong>
+              <span class="stat-label">PROJECTS<br />COMPLETED</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== INFINITE SLIDING TEXT MARQUEE ==================== -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>CONTENT CREATOR</span> <span class="marquee-star">✦</span>
+          <span>GRAPHIC DESIGNER</span> <span class="marquee-star">✦</span>
+          <span>VIRAL REELS</span> <span class="marquee-star">✦</span>
+          <span>VIDEO EDITOR</span> <span class="marquee-star">✦</span>
+          <span>EVENT BRANDING</span> <span class="marquee-star">✦</span>
+          <span>POSTER DESIGN</span> <span class="marquee-star">✦</span>
+          <span>MOTION GRAPHICS</span> <span class="marquee-star">✦</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>CONTENT CREATOR</span> <span class="marquee-star">✦</span>
+          <span>GRAPHIC DESIGNER</span> <span class="marquee-star">✦</span>
+          <span>VIRAL REELS</span> <span class="marquee-star">✦</span>
+          <span>VIDEO EDITOR</span> <span class="marquee-star">✦</span>
+          <span>EVENT BRANDING</span> <span class="marquee-star">✦</span>
+          <span>POSTER DESIGN</span> <span class="marquee-star">✦</span>
+          <span>MOTION GRAPHICS</span> <span class="marquee-star">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SELECTED PROJECTS SECTION ==================== -->
+    <section class="projects-section" id="projects">
+      <div class="section-container">
+        
+        <div class="projects-header reveal">
+          <div class="projects-header-left">
+            <h2 class="section-title">SELECTED PROJECTS</h2>
+            <p class="section-sub-desc">Explore curated works partitioned across festival coverage, viral formats, and design systems.</p>
+          </div>
+          <div class="projects-line"></div>
+          <button class="view-all-btn" id="viewAllProjectsBtn">
+            <span>VIEW ALL ARCHIVE</span>
+            <span class="arrow-right">➔</span>
+          </button>
+        </div>
+
+        <!-- Dynamic Partition Category Filter Switcher -->
+        <div class="projects-partition-nav reveal" id="partitionNav">
+          <button class="partition-tab-btn active" data-partition="all">
+            <span class="tab-icon">✦</span>
+            <span>ALL PARTITIONS</span>
+            <span class="tab-badge" id="badgeAll">6</span>
+          </button>
+          <button class="partition-tab-btn" data-partition="festival-media">
+            <span class="tab-icon">🎪</span>
+            <span>FESTIVAL MEDIA</span>
+            <span class="tab-badge" id="badgeFestival">2</span>
+          </button>
+          <button class="partition-tab-btn" data-partition="viral-reels">
+            <span class="tab-icon">⚡</span>
+            <span>VIRAL REELS</span>
+            <span class="tab-badge" id="badgeReels">2</span>
+          </button>
+          <button class="partition-tab-btn" data-partition="poster-system">
+            <span class="tab-icon">🎨</span>
+            <span>POSTER SYSTEM</span>
+            <span class="tab-badge" id="badgePosters">2</span>
+          </button>
+        </div>
+
+        <!-- Dynamic Partitions Showcase Grid -->
+        <div class="projects-cards-grid" id="showcaseGrid">
+          
+          <!-- PARTITION 1: FESTIVAL MEDIA -->
+          <article class="project-card reveal" data-id="aura-fest" data-partition="festival-media">
+            <div class="project-media-wrap">
+              <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&auto=format&fit=crop&q=80" alt="AURA Fest" />
+              <div class="project-card-tag tag-festival">🎪 FESTIVAL MEDIA</div>
+              <div class="project-card-metric">✨ 85K+ Views · 4.2K Footfall</div>
+            </div>
+            <div class="project-meta-bar">
+              <span class="project-index">01</span>
+              <div class="project-titles">
+                <h3>AURA FESTIVAL 2025</h3>
+                <p>COLLEGE EVENT MEDIA &amp; AFTERMOVIE</p>
+              </div>
+              <span class="project-nav-arrow">➔</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-id="concert-night" data-partition="festival-media">
+            <div class="project-media-wrap">
+              <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=900&auto=format&fit=crop&q=80" alt="Battle of the Bands" />
+              <div class="project-card-tag tag-festival">🎪 FESTIVAL MEDIA</div>
+              <div class="project-card-metric">⚡ Same-Night Viral Teaser</div>
+            </div>
+            <div class="project-meta-bar">
+              <span class="project-index">02</span>
+              <div class="project-titles">
+                <h3>BATTLE OF THE BANDS &amp; DJ NIGHT</h3>
+                <p>CONCERT MEDIA &amp; LIVE AFTERMOVIE</p>
+              </div>
+              <span class="project-nav-arrow">➔</span>
+            </div>
+          </article>
+
+          <!-- PARTITION 2: VIRAL REELS -->
+          <article class="project-card reveal" data-id="stride-growth" data-partition="viral-reels">
+            <div class="project-media-wrap">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&auto=format&fit=crop&q=80" alt="Viral Reels Series" />
+              <div class="project-card-tag tag-reels">⚡ VIRAL REELS</div>
+              <div class="project-card-metric">🔥 320K+ Organic Reach</div>
+            </div>
+            <div class="project-meta-bar">
+              <span class="project-index">03</span>
+              <div class="project-titles">
+                <h3>30-DAY HIGH-GROWTH REELS</h3>
+                <p>SHORT-FORM HOOKS &amp; RETENTION CUTS</p>
+              </div>
+              <span class="project-nav-arrow">➔</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-id="fitness-campaign" data-partition="viral-reels">
+            <div class="project-media-wrap">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&auto=format&fit=crop&q=80" alt="Pulse Fitness Reels" />
+              <div class="project-card-tag tag-reels">⚡ VIRAL REELS</div>
+              <div class="project-card-metric">📈 +40% Inquiries · 12 Reels</div>
+            </div>
+            <div class="project-meta-bar">
+              <span class="project-index">04</span>
+              <div class="project-titles">
+                <h3>PULSE FITNESS VIDEO STORIES</h3>
+                <p>HIGH-ENERGY CUTS &amp; SOUND DESIGN</p>
+              </div>
+              <span class="project-nav-arrow">➔</span>
+            </div>
+          </article>
+
+          <!-- PARTITION 3: POSTER SYSTEM -->
+          <article class="project-card reveal" data-id="innotech-symposium" data-partition="poster-system">
+            <div class="project-media-wrap">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&auto=format&fit=crop&q=80" alt="InnoTech Posters" />
+              <div class="project-card-tag tag-poster">🎨 POSTER SYSTEM</div>
+              <div class="project-card-metric">✨ 15+ Keynote Posters</div>
+            </div>
+            <div class="project-meta-bar">
+              <span class="project-index">05</span>
+              <div class="project-titles">
+                <h3>INNOTECH SYMPOSIUM</h3>
+                <p>KEYNOTE POSTERS &amp; EVENT BRANDING</p>
+              </div>
+              <span class="project-nav-arrow">➔</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-id="sports-olympiad" data-partition="poster-system">
+            <div class="project-media-wrap">
+              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=900&auto=format&fit=crop&q=80" alt="Sports Olympiad Identity" />
+              <div class="project-card-tag tag-poster">🎨 POSTER SYSTEM</div>
+              <div class="project-card-metric">🏆 32 Matchday Designs</div>
+            </div>
+            <div class="project-meta-bar">
+              <span class="project-index">06</span>
+              <div class="project-titles">
+                <h3>SPORTS OLYMPIAD</h3>
+                <p>MATCHDAY POSTERS &amp; ARENA GRAPHICS</p>
+              </div>
+              <span class="project-nav-arrow">➔</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Expandable Full Projects Drawer -->
+        <div class="all-projects-drawer" id="allProjectsDrawer">
+          <div class="drawer-toolbar">
+            <div class="filters" id="filters">
+              <button class="active" data-filter="all">All <span class="filter-count" id="count-all">8</span></button>
+              <button data-filter="event">College Events <span class="filter-count" id="count-event">4</span></button>
+              <button data-filter="internship">Internships <span class="filter-count" id="count-internship">3</span></button>
+              <button data-filter="video">Video &amp; Reels <span class="filter-count" id="count-video">4</span></button>
+              <button data-filter="design">Graphic Design <span class="filter-count" id="count-design">4</span></button>
+              <button data-filter="photo">Photography <span class="filter-count" id="count-photo">2</span></button>
+            </div>
+            <div class="search-wrapper">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="projectSearch" class="search-input" placeholder="Search by tool, event or title..." autocomplete="off" />
+              <span class="search-clear" id="searchClear" title="Clear">✕</span>
+            </div>
+          </div>
+          <div class="grid" id="grid"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION & SKILLS SECTION ==================== -->
+    <section class="overview-section" id="education">
+      <div class="section-container">
+        <div class="education-skills-layout">
+          
+          <!-- Column 1: EDUCATION -->
+          <div class="edu-card-block reveal">
+            <h2 class="col-heading">EDUCATION</h2>
+            
+            <div class="edu-entry-featured">
+              <div class="edu-badge-icon">🎓</div>
+              <div class="edu-featured-details">
+                <div class="edu-row">
+                  <h4>B.E. in Computer Science and Engineering</h4>
+                  <span class="edu-years">2024 — 2028</span>
+                </div>
+                <p class="edu-institute">Shri Sant Gajanan Maharaj College of Engineering, Shegaon</p>
+                <p class="edu-desc">Focused on Computer Science, Algorithmic Problem Solving, and Digital Design Systems.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: SKILLS (Graphic Design, Video Editing, Software & CS) -->
+          <div class="skills-card-block reveal">
+            <h2 class="col-heading">SKILLS &amp; TOOLS</h2>
+            
+            <div class="skills-tag-matrix">
+              <span>GRAPHIC DESIGN</span>
+              <span>POSTER DESIGN</span>
+              <span>ADOBE PHOTOSHOP</span>
+              <span>PREMIERE PRO</span>
+              <span>AFTER EFFECTS</span>
+              <span>VIRAL HOOKS</span>
+              <span>EVENT BRANDING</span>
+              <span>COLOR GRADING</span>
+              <span>SOUND DESIGN</span>
+              <span>LIGHTROOM</span>
+              <span>BASIC PYTHON</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION (DIRECTLY AFTER EDUCATION & SKILLS) ==================== -->
+    <section class="collab-section" id="contact">
+      <div class="section-container">
+        <div class="collab-grid">
+          
+          <!-- Left: Call to Action -->
+          <div class="collab-left reveal">
+            <h2 class="collab-title">
+              LET'S WORK<br />TOGETHER <span class="sparkle-star">✦</span>
+            </h2>
+            <p class="collab-desc">
+              I'm currently open for new projects, college festivals, freelance graphic branding, and creative content creation. Let's create something amazing that drives real results.
+            </p>
+            <a href="mailto:gaikwadpavan569@gmail.com" class="collab-cta-btn">
+              <span>➔ AVAILABLE FOR FREELANCE</span>
+            </a>
+          </div>
+
+          <!-- Middle: Real Contact Details -->
+          <div class="collab-middle reveal">
+            <div class="contact-item">
+              <div class="contact-icon-circle">✉</div>
+              <div class="contact-link-wrap">
+                <span class="contact-label">EMAIL ME</span>
+                <a href="mailto:gaikwadpavan569@gmail.com">gaikwadpavan569@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-circle">📸</div>
+              <div class="contact-link-wrap">
+                <span class="contact-label">INSTAGRAM</span>
+                <a href="https://instagram.com/pavan_gaikwad14" target="_blank" rel="noopener">@pavan_gaikwad14</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-circle">📞</div>
+              <div class="contact-link-wrap">
+                <span class="contact-label">CALL / WHATSAPP</span>
+                <a href="tel:+918265089277">+91 8265089277</a> &nbsp;·&nbsp;
+                <a href="https://wa.me/918265089277?text=Hi%20Pavan,%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener" class="wa-badge">WhatsApp 💬</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-circle">📍</div>
+              <div class="contact-link-wrap">
+                <span class="contact-label">LOCATION</span>
+                <span>Shegaon, Buldhana, Maharashtra, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 3D Workspace Mockup -->
+          <div class="collab-right reveal">
+            <div class="workspace-mockup">
+              <img 
+                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80" 
+                alt="Pavan Workspace" 
+                class="mockup-screen-img"
+              />
+              <div class="mockup-overlay-badge">
+                <span class="badge-tag">WE DESIGN</span>
+                <span class="badge-main">GRAPHIC &amp; DIGITAL STORIES</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Dual Mail & WhatsApp Direct Contact Form -->
+        <form class="contact-direct-form reveal" id="form">
+          <div class="form-header-bar">
+            <div class="form-header-title">
+              <span class="sparkle-star">✦</span>
+              <span>GET IN TOUCH FOR FREELANCE &amp; PROJECTS</span>
+            </div>
+            <div class="form-channel-hints">
+              <span class="channel-hint-badge mail"><i class="badge-dot"></i> Direct Mail</span>
+              <span class="channel-hint-badge wa"><i class="badge-dot"></i> Instant WhatsApp</span>
+            </div>
+          </div>
+
+          <div class="form-inputs-row">
+            <div class="form-field">
+              <label for="name" class="field-label">YOUR NAME *</label>
+              <input type="text" id="name" placeholder="Pavan Kumar" required />
+            </div>
+            <div class="form-field">
+              <label for="email" class="field-label">YOUR EMAIL *</label>
+              <input type="email" id="email" placeholder="name@example.com" required />
+            </div>
+            <div class="form-field">
+              <label for="phone" class="field-label">WHATSAPP / PHONE (OPTIONAL)</label>
+              <input type="tel" id="phone" placeholder="+91 98765 43210" />
+            </div>
+          </div>
+
+          <div class="form-field select-field">
+            <label for="projectType" class="field-label">SELECT PROJECT CATEGORY / PARTITION</label>
+            <select id="projectType" class="form-select">
+              <option value="Festival Media & Event Aftermovie">🎪 Festival Media &amp; Event Aftermovie</option>
+              <option value="Viral Reels & Short-Form Video Editing">⚡ Viral Reels &amp; Short-Form Video Editing</option>
+              <option value="Poster System & Keynote Branding">🎨 Poster System &amp; Keynote Branding</option>
+              <option value="College Event Creative Direction">🎓 College Event Creative Direction</option>
+              <option value="General Freelance Collaboration">💬 General Freelance Collaboration</option>
+            </select>
+          </div>
+
+          <div class="form-field" style="margin-top: 1.2rem;">
+            <label for="msg" class="field-label">YOUR MESSAGE / PROJECT DETAILS *</label>
+            <textarea id="msg" rows="3" placeholder="Tell me about your event dates, festival media needs, reel style, poster requirements or timeline..." required></textarea>
+          </div>
+
+          <div class="form-btn-row">
+            <div class="dual-action-buttons">
+              <button type="button" class="action-btn send-email-btn" id="sendMailBtn">
+                <span class="btn-icon">✉</span>
+                <span class="btn-text">SEND VIA EMAIL</span>
+              </button>
+              <button type="button" class="action-btn send-whatsapp-btn" id="sendWhatsappBtn">
+                <span class="btn-icon">💬</span>
+                <span class="btn-text">SEND ON WHATSAPP</span>
+              </button>
+            </div>
+            <p class="form-feedback-note" id="formNote"></p>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="section-container footer-inner">
+      <p>© <span id="year">2026</span> Pavan Gaikwad. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://instagram.com/pavan_gaikwad14" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/918265089277" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:gaikwadpavan569@gmail.com">Email</a>
+      </div>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ==================== DYNAMIC PROJECT DETAIL MODAL ==================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close details">✕</button>
+      
+      <div class="modal-media">
+        <img src="" alt="" id="modalImg" />
+      </div>
+
+      <div class="modal-body">
+        <div>
+          <div class="modal-header-meta">
+            <span class="modal-cat-badge" id="modalBadge">Category</span>
+            <span class="modal-year" id="modalYear">2025</span>
+          </div>
+
+          <h3 class="modal-title" id="modalTitle">Project Title</h3>
+          <p class="modal-client" id="modalClient">Client / Event Name</p>
+
+          <div class="modal-stats-box" id="modalStatsBox">
+            <span id="modalMetric">✨ Key Impact: 85K+ Views</span>
+          </div>
+
+          <p class="modal-desc" id="modalDesc">Detailed description of the project execution.</p>
+
+          <p class="modal-tools-title">Tools &amp; Software Used</p>
+          <div class="modal-tools-pills" id="modalTools"></div>
+        </div>
+
+        <div class="modal-nav">
+          <button class="modal-nav-btn" id="modalPrev">← Previous Project</button>
+          <button class="modal-nav-btn" id="modalNext">Next Project →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HIDDEN YOUTUBE AUDIO ENGINE ==================== -->
+  <div id="ytAudioContainer" class="yt-audio-container" aria-hidden="true">
+    <div id="ytPlayer"></div>
+  </div>
+
+  <!-- ==================== FLOATING MUSIC PLAYER ==================== -->
+  <aside class="music-player" id="musicPlayer" role="region" aria-label="Background Music Player">
+    <div class="music-player__inner">
+      <button class="music-disc-wrap" id="musicDiscBtn" aria-label="Toggle Playback">
+        <div class="music-disc" id="musicDisc">
+          <span class="disc-groove"></span>
+          <span class="disc-hole"></span>
+          <span class="disc-icon">🎵</span>
+        </div>
+      </button>
+
+      <div class="music-details">
+        <div class="music-meta-top">
+          <span class="music-badge">BGM ✦ SHAKTI</span>
+          <div class="music-equalizer" id="musicEqualizer" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <p class="music-name">Raat Ki Rani <span class="music-artist">— Seedhe Maut</span></p>
+      </div>
+
+      <div class="music-actions">
+        <button class="music-ctrl-btn" id="musicPlayBtn" aria-label="Play or Pause Music" title="Play/Pause">
+          <svg class="icon-play" viewBox="0 0 24 24" width="16" height="16"><polygon points="6 4 20 12 6 20 6 4" fill="currentColor"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" width="16" height="16"><rect x="6" y="4" width="4" height="16" fill="currentColor"/><rect x="14" y="4" width="4" height="16" fill="currentColor"/></svg>
+        </button>
+        <button class="music-ctrl-btn" id="musicMuteBtn" aria-label="Mute or Unmute Music" title="Mute/Unmute">
+          <svg class="icon-vol-high" viewBox="0 0 24 24" width="16" height="16"><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="icon-vol-mute" viewBox="0 0 24 24" width="16" height="16"><path d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Friendly Autoplay / Tap prompt -->
+    <div class="music-tooltip" id="musicTooltip">
+      <span>🎵 Click anywhere to play <strong>Raat Ki Rani</strong></span>
+      <button class="music-tooltip-close" id="musicTooltipClose" aria-label="Dismiss">✕</button>
+    </div>
+  </aside>
+
+  <!-- YouTube IFrame API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
